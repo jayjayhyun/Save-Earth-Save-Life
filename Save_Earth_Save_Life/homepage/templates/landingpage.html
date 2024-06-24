@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/landingpage.css' %}">
+</head>
+<body>
+    <header class="bg-success text-white text-center py-2" style="background-color:#99BC64 !important">
+        <p>News Display</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'image/logo.png' %}" alt="Logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Update</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+<section class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-success">Travel around <br> Follow your heart</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate.</p>
+                <button class="btn btn-success">Get started</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="mission-vision py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h2 class="text-success">Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-success">Vision</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services py-5">
+        <div class="container text-center">
+            <h2>Our Services</h2>
+            <p>K2A Management and Save Earth Save Life Joint Venture provides a comprehensive range of environmental services designed to promote sustainable development in Cambodia. Our key services include:</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-card text-center mb-4">
+                        <img src="{% static 'image/eia.png' %}" class="service-img" alt="Environmental Impact Assessments">
+                        <h5>Environmental Impact Assessments (EIA)</h5>
+                        <p>Conducting thorough assessments to identify, analyze, and mitigate the environmental impacts of development projects, ensuring compliance with national and international regulations.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card text-center mb-4">
+                        <img src="{% static 'image/Biodiversity_Surveys.png' %}" class="service-img" alt="Biodiversity Surveys">
+                        <h5>Biodiversity Surveys</h5>
+                        <p><br>Performing detailed studies of local flora and fauna to understand and preserve the region's biodiversity, with a focus on maintaining or enhancing protected areas and ecosystems.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card text-center mb-4">
+                        <img src="{% static 'image/Ecology_Surveys.png' %}" class="service-img" alt="Ecology Surveys">
+                        <h5>Ecology Surveys</h5>
+                        <p><br><br>Performing thorough ecological research to examine interactions within ecosystems, monitor their health, and propose efficient management approaches.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card text-center mb-4">
+                        <img src="{% static 'image/Renewable_Energy.png' %}" class="service-img" alt="Renewable Energy Projects">
+                        <h5>Renewable Energy Projects</h5>
+                        <p>Developing and implementing renewable energy solutions, such as solar, wind, and hydroelectric power, to reduce carbon emissions and promote cleaner energy alternatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="key-strength py-5">
+        <div class="container">
+            <h2 class="text-center text-success mb-4">Key Strength</h2>
+            <div class="row align-items-center">
+                 <div class="col-md-6">
+                    <img src="{% static 'image/keystrength.png' %}" alt="Key Strength" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-success">Expertise and Experience</h3>
+                    <p>Combining decades of experience from both organizations, the joint venture is equipped with the knowledge and skills needed to tackle complex environmental issues.</p>
+                    <button class="btn btn-outline-success">Learn More</button>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <section class="events-workshops bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="event-card p-3 bg-white shadow-sm text-center">Workshop</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="event-card p-3 bg-white shadow-sm text-center">Workshop</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2024 K2A Management. All Rights Reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
