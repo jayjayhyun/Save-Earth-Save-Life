@@ -7,12 +7,55 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/landingpage.css' %}">
+    <style>
+        .news-ticker {
+            background-color: #99BC64;
+            color: white;
+            padding: 5px 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%; /* Ensure ticker occupies full width */
+        }
+        
+        .news-content {
+            display: inline-block; /* Make content inline for horizontal scrolling */
+            animation: tickerAnimation linear infinite; /* Apply animation infinitely */
+        }
+        
+        .news-item {
+            margin-right: 20px; /* Adjust spacing between items */
+        }
+        
+        @keyframes tickerAnimation {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-success text-white text-center py-2" style="background-color:#99BC64 !important">
-        <p>News Display</p>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="news-container">
+        <div class="title">
+            Breaking News
+        </div>
+
+        <ul>
+            <li>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam!
+            </li>
+            
+            <li>
+                Lorem ipsum dolor sit
+            </li>
+
+            <li>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam!
+            </li>
+        </ul>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 50px;">
         <a class="navbar-brand" href="#">
             <img src="{% static 'image/logo.png' %}" alt="Logo" height="50">
         </a>
@@ -43,7 +86,7 @@
             <div class="col-md-6">
                 <h1 class="text-success">Travel around <br> Follow your heart</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate.</p>
-                <button class="btn btn-success">Get started</button>
+                <button class="btn btn-getstart">Get started</button>
             </div>
         </div>
     </div>
@@ -53,13 +96,24 @@
     <section class="mission-vision py-5">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h2 class="text-success">Mission</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate.</p>
+                    <p>Our mission is to contribute significantly to the ecological well being of
+Cambodia by providing high-quality environmental services. We aim to protect
+and enhance the natural environment through meticulous Environmental
+Impact Assessments (EIA), biodiversity and ecology surveys, renewable energy
+projects, and sustainability initiatives. By combining our expertise and resources,
+we strive to ensure that development in Cambodia is both environmentally
+responsible and sustainable.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h2 class="text-success">Vision</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate.</p>
+                    <p>Our vision is to become a leader in environmental services and renewable
+energy in Cambodia, setting the standard for excellence in environmental
+protection, biodiversity conservation, and sustainable practices. We envision a
+future where economic growth is harmoniously balanced with ecological
+integrity, and where renewable energy plays a key role in reducing carbon
+footprints and promoting a cleaner, greener Cambodia.</p>
                 </div>
             </div>
         </div>
@@ -80,21 +134,21 @@
                     <div class="service-card text-center mb-4">
                         <img src="{% static 'image/Biodiversity_Surveys.png' %}" class="service-img" alt="Biodiversity Surveys">
                         <h5>Biodiversity Surveys</h5>
-                        <p><br>Performing detailed studies of local flora and fauna to understand and preserve the region's biodiversity, with a focus on maintaining or enhancing protected areas and ecosystems.</p>
+                        <p>Performing detailed studies of local flora and fauna to understand and preserve the region's biodiversity, with a focus on maintaining or enhancing protected areas and ecosystems.<br><br></p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="service-card text-center mb-4">
                         <img src="{% static 'image/Ecology_Surveys.png' %}" class="service-img" alt="Ecology Surveys">
                         <h5>Ecology Surveys</h5>
-                        <p><br><br>Performing thorough ecological research to examine interactions within ecosystems, monitor their health, and propose efficient management approaches.</p>
+                        <p>Performing thorough ecological research to examine interactions within ecosystems, monitor their health, and propose efficient management approaches.<br><br><br></p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="service-card text-center mb-4">
                         <img src="{% static 'image/Renewable_Energy.png' %}" class="service-img" alt="Renewable Energy Projects">
                         <h5>Renewable Energy Projects</h5>
-                        <p>Developing and implementing renewable energy solutions, such as solar, wind, and hydroelectric power, to reduce carbon emissions and promote cleaner energy alternatives.</p>
+                        <p>Developing and implementing renewable energy solutions, such as solar, wind, and hydroelectric power, to reduce carbon emissions and promote cleaner energy alternatives.<br></p>
                     </div>
                 </div>
             </div>
@@ -110,41 +164,48 @@
                 <div class="col-md-6">
                     <h3 class="text-success">Expertise and Experience</h3>
                     <p>Combining decades of experience from both organizations, the joint venture is equipped with the knowledge and skills needed to tackle complex environmental issues.</p>
-                    <button class="btn btn-outline-success">Learn More</button>
+                    <button class="btn btn-getstart">Learn More</button>
                 </div>
                
             </div>
         </div>
     </section>
-    <section class="events-workshops bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
+     <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 item1">
+                Column 1 (Two Rows)
+                <span class="badge">Workshop</span>
+            </div>
+            <div class="col-6 col-6-container">
+                <div class="row flex-grow-1">
+                    <div class="col-6 item2">
+                        Column 2 (First Row)
+                        <span class="badge">Event</span>
+                    </div>
+                    <div class="col-6 item2">
+                        Column 2 (First Row)
+                        <span class="badge">Event</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="event-card p-3 bg-white shadow-sm text-center">Workshop</div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="event-card p-3 bg-white shadow-sm text-center">Workshop</div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="event-card p-3 bg-white shadow-sm text-center">Event</div>
+                <div class="row flex-grow-1">
+                    <div class="col-12 item3" style="">
+                        Column 2 (Second Row)
+                        <span class="badge">Event</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    
+   
     <footer class="bg-success text-white text-center py-3">
         <p>&copy; 2024 K2A Management. All Rights Reserved.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+   
+</script>
 </body>
 </html>

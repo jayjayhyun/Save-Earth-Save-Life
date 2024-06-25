@@ -1,54 +1,127 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.news-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+    background-color: #4CAF50;
+    z-index: 1000;
+    /* Ensure this is higher than other elements */
+}
+
+.news-container .title {
+    position: absolute;
+    background: #df2020;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 200;
+}
+
+.news-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    animation: scroll 25s infinite linear;
+}
+
+.news-container ul li {
+    white-space: nowrap;
+    padding: 10px 24px;
+    color: #494949;
+    position: relative;
+}
+
+.news-container ul li::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #b8b8b8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-container ul li:last-child::after {
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-1083px);
+    }
 }
 
 .hero {
     background-image: url('../image/backgroundearth.png');
     background-size: cover;
-    /* Cover ensures the background image covers the entire section */
     background-position: center;
-    /* Centers the background image */
     color: #fff;
-    /* Sets text color to white for contrast */
     padding: 100px 0;
-    /* Adjust padding as needed to separate text from edges */
-    height: 100vh;
-    /* Adjust the height of the hero section as needed */
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+    /* Ensure this is lower than .news-container */
 }
 
 .hero h1 {
     color: #4CAF50;
-    font-size: 48px;
+    
 }
 
 .hero p {
     color: #666;
-    font-size: 18px;
+    
     line-height: 1.6;
 }
-
+.btn-getstart{
+    background-color: #8FA272;
+    color:white;
+    padding: 15px;
+    border-radius: 30px;
+    width: 30%;
+}
 .mission-vision {
     background-color: #fff;
+    position: relative;
+    z-index: 1;
+    /* Ensure this is lower than .news-container */
 }
 
 .mission-vision h2 {
     color: #4CAF50;
-    font-size: 32px;
+    
 }
 
 .services {
     background-color: #8FA272;
+    position: relative;
+    z-index: 1;
+    /* Ensure this is lower than .news-container */
 }
 
 .services h2 {
     color: white;
-    font-size: 32px;
+   
     font-weight: bold;
 }
 
 .services p {
     color: white;
-    font-size: 18px;
+    
     margin-bottom: 30px;
 }
 
@@ -57,10 +130,13 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin-top: 20%;
+    font-size: 1rem;
+    height: fit-content;
 }
-.service-card p{
+
+.service-card p {
     color: black;
-    font-size: 14px;
+    
 }
 
 .service-img {
@@ -69,29 +145,29 @@ body {
     margin-bottom: 20px;
     margin-top: -33%;
 }
+
 .key-strength {
     background-color: #fff;
+    position: relative;
+    z-index: 1;
+    /* Ensure this is lower than .news-container */
 }
 
 .key-strength h2 {
     color: #4CAF50;
-    font-size: 32px;
+    
 }
 
 .key-strength h3 {
     color: #4CAF50;
-    font-size: 24px;
+    
 }
 
 .key-strength p {
     color: #666;
-    font-size: 18px;
     line-height: 1.6;
 }
 
-.events-workshops {
-    background-color: #F0F7E4;
-}
 
 .event-card {
     border-radius: 10px;
@@ -102,4 +178,51 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 1;
+    /* Ensure this is lower than .news-container */
 }
+  .item1,
+  .item2,
+  .item3 {
+      position: relative;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .item1 {
+      background-color: #4CAF50;
+    
+      
+    
+  }
+
+  .item2 {
+      background-color: #8FA272;
+      
+  }
+
+  .item3 {
+      background-color: #A3C875;
+  }
+
+  .badge {
+      position: absolute;
+      bottom: 10px;
+      background-color: #99BC64;
+      color: black;
+      padding: 10px;
+      width: 30%;
+      border-radius: 5px;
+  }
+
+  .col-6-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
