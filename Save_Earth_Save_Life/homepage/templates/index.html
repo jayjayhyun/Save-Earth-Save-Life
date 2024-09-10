@@ -1,50 +1,74 @@
 {% extends 'masterpage.html' %}
 {% load static %}
 {% block content %}
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+<body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Selecao</span></h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+    <section class="slider">
+      <div class="hero-slider">
+        <!-- Start Single Slider -->
+        <div class="single-slider" style="background-image:url('static/image/tree3.jpg')">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="text">
+                  <h1>Welcome to Save Earth Save Life!</h1>
+                  <p>We are dedicated to enhancing the ecological well-being of Cambodia. Our team is committed to providing top-tier environmental services, including comprehensive Environmental Impact Assessments (EIA), biodiversity and ecology surveys, renewable energy projects, and sustainability initiatives. Together, we work towards a greener and more sustainable future.</p>
+                  <div class="button">
+                    <a href="#" class="btn">Get Appointment</a>
+                    <a href="#" class="btn primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        <!-- End Single Slider -->
+        <!-- Start Single Slider -->
+        <div class="single-slider" style="background-image:url('static/image/tree2.jpg')">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="text">
+                  <h1>What We Offer</h1>
+                  <p>Combining decades of experience, our team excels in tackling complex environmental issues. With expertise in impact assessments, remediation, and sustainable development, we provide customized solutions that exceed regulatory requirements and promote long-term stewardship. Discover how we can create a greener future together. </p>
+                  <div class="button">
+                    <a href="#" class="btn">Get Appointment</a>
+                    <a href="#" class="btn primary">About Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        <!-- End Single Slider -->
+        <!-- Start Single Slider -->
+        <div class="single-slider" style="background-image:url('static/image/tree1.jpg')">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="text">
+                  <h1>We Provide Medical Services That You Can Trust!</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+                  <div class="button">
+                    <a href="#" class="btn">Get Appointment</a>
+                    <a href="#" class="btn primary">Contact Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
+        <!-- End Single Slider -->
       </div>
-
+      <section id="hero" class="hero section dark-background">
       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
         <defs>
           <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
@@ -60,85 +84,102 @@
         </g>
       </svg>
 
-    </section><!-- /Hero Section -->
+    </section>
+    </section>
+    
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.hero-slider').on('init', function(event, slick) {
+          // Initial animation on the first slide
+          $('.single-slider:first-child .text').addClass('ascend');
+        });
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+        $('.hero-slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear',
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: true
+        });
 
-      <!-- Who we are Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Who we are</p>
-      </div><!-- End Section Title -->
+        $('.hero-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+          // Remove existing animation classes
+          $('.single-slider .text').removeClass('ascend');
 
-      <div class="container">
+          // Add ascend class to the next slide
+          $('.single-slider').eq(nextSlide).find('.text').addClass('ascend');
+        });
+      });
+    </script>     
+  </body>
+        
+<!-- About Section -->
+<section id="about" class="about section">
 
-        <div class="row gy-4">
+  <!-- Who we are Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p>Who we are</p>
+  </div><!-- End Section Title -->
 
-          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Save Earth Save Life is dedicated to enhancing Cambodia's ecological health through
-comprehensive environmental services. Their mission includes conducting meticulous
-Environmental Impact Assessments (EIA), biodiversity surveys, and promoting renewable energy
-initiatives. They aim to lead in environmental protection, biodiversity conservation, and sustainable
-practices, envisioning a future where economic growth aligns harmoniously with ecological integrity.
-By prioritizing renewable energy solutions, they strive to reduce carbon footprints and foster a
-cleaner, greener Cambodia.
-
-            </p>
-            
-          </div>
-
-        </div>
-
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <img src="static/image/sesl.jpg" alt="Who We Are" class="img-fluid">
       </div>
-      <!-- Our Mission Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Our Mission</p>
-      </div><!-- End Section Title -->
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Our mission is to contribute significantly to the ecological well being of
-Cambodia by providing high-quality environmental services. We aim to protect
-and enhance the natural environment through meticulous Environmental
-Impact Assessments (EIA), biodiversity and ecology surveys, renewable energy
-projects, and sustainability initiatives. By combining our expertise and resources,
-we strive to ensure that development in Cambodia is both environmentally
-responsible and sustainable.
-
-            </p>
-            
-          </div>
-
-        </div>
-
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Save Earth Save Life is dedicated to enhancing Cambodia's ecological health through comprehensive environmental services.
+          Their mission includes conducting meticulous Environmental Impact Assessments (EIA), biodiversity surveys, and promoting renewable energy
+          initiatives. They aim to lead in environmental protection, biodiversity conservation, and sustainable practices, envisioning a future where economic growth aligns harmoniously with ecological integrity. By prioritizing renewable energy solutions, they strive to reduce carbon footprints and foster a cleaner, greener Cambodia.
+        </p>
       </div>
-      <!-- Our Vision Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Our Vision</p>
-      </div><!-- End Section Title -->
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-            Our vision is to become a leader in environmental services and renewable
-energy in Cambodia, setting the standard for excellence in environmental
-protection, biodiversity conservation, and sustainable practices. We envision a
-future where economic growth is harmoniously balanced with ecological
-integrity, and where renewable energy plays a key role in reducing carbon
-footprints and promoting a cleaner, greener Cambodia
+    </div>
+  </div>
 
-            </p>
-            
-          </div>
+  <!-- Our Mission Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <p>Our Mission</p>
+  </div><!-- End Section Title -->
 
-        </div>
-
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <img src="static/image/tree4.jpg" alt="Our Mission" class="img-fluid">
       </div>
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Our mission is to contribute significantly to the ecological well-being of Cambodia by providing high-quality environmental services.
+          We aim to protect and enhance the natural environment through meticulous Environmental Impact Assessments (EIA), biodiversity and ecology surveys, renewable energy projects, and sustainability initiatives. By combining our expertise and resources, we strive to ensure that development in Cambodia is both environmentally responsible and sustainable.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Vision Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <p>Our Vision</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <img src="static/image/farm.jpg" alt="Our Vision" class="img-fluid">
+      </div>
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Our vision is to become a leader in environmental services and renewable energy in Cambodia, setting the standard for excellence in environmental protection, biodiversity conservation, and sustainable practices. We envision a future where economic growth is harmoniously balanced with ecological integrity, and where renewable energy plays a key role in reducing carbon footprints and promoting a cleaner, greener Cambodia.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
 
     </section><!-- /About Section -->
 <!-- Features Section -->
@@ -183,7 +224,7 @@ footprints and promoting a cleaner, greener Cambodia
             </p>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{% static 'homepage/assets/img/working-1.jpg' %}" alt="Expertise and Experience" class="img-fluid">
+            <img src="{% static 'image/office.jpg' %}" alt="Expertise and Experience" class="img-fluid">
           </div>
         </div>
       </div><!-- End Tab Content Item -->
@@ -206,7 +247,7 @@ footprints and promoting a cleaner, greener Cambodia
             </ul>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{% static 'homepage/assets/img/working-2.jpg' %}" alt="Local and Global Knowledge" class="img-fluid">
+            <img src="{% static 'image/office.jpg' %}" alt="Local and Global Knowledge" class="img-fluid">
           </div>
         </div>
       </div><!-- End Tab Content Item -->
@@ -244,11 +285,11 @@ footprints and promoting a cleaner, greener Cambodia
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Join Us Now</h3>
+            <p>Together, we can make a tangible impact and ensure a better future for generations to come. Join us in our commitment to environmental stewardship and sustainable development.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="#">Sign Up</a>
           </div>
         </div>
 
@@ -276,15 +317,15 @@ footprints and promoting a cleaner, greener Cambodia
               </div>
               <a href="{% url 'service_details'  %}" class="stretched-link">
                 <h3>Environmental Impact
-Assessments (EIA)</h3>
+                    Assessments (EIA)</h3>
               </a>
               <p>Conducting thorough assessments
-to identify, predict, and mitigate
-the environmental impacts of
-development projects, ensuring
-compliance with both national and
-international regulations.
-</p>
+                to identify, predict, and mitigate
+                the environmental impacts of
+                development projects, ensuring
+                compliance with both national and
+                international regulations.
+                </p>
             </div>
           </div><!-- End Service Item -->
 
@@ -297,12 +338,12 @@ international regulations.
                 <h3>Biodiversity Surveys</h3>
               </a>
               <p>Performing detailed studies of
-local flora and fauna to understand
-and preserve the region's rich
-biodiversity, including habitat
-assessments and conservation
-planning for endangered species
-and ecosystems.</p>
+              local flora and fauna to understand
+              and preserve the region's rich
+              biodiversity, including habitat
+              assessments and conservation
+              planning for endangered species
+              and ecosystems.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -315,10 +356,10 @@ and ecosystems.</p>
                 <h3>Ecology Surveys</h3>
               </a>
               <p>Performing thorough ecological
-research to examine interactions
-within ecosystems, monitor their
-health, and propose efficient
-management approaches.</p>
+              research to examine interactions
+              within ecosystems, monitor their
+              health, and propose efficient
+              management approaches.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -331,11 +372,11 @@ management approaches.</p>
                 <h3>Renewable Energy Projects</h3>
               </a>
               <p>Developing and implementing
-renewable energy solutions, such
-as solar, wind, and hydroelectric
-power, to reduce carbon emissions
-and promote cleaner energy
-alternatives.</p>
+                renewable energy solutions, such
+                as solar, wind, and hydroelectric
+                power, to reduce carbon emissions
+                and promote cleaner energy
+                alternatives.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -489,7 +530,7 @@ alternatives.</p>
               <div class="accordion-item">
                 <h2 class="mb-0">
                   <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
-                    How to download and register?
+                    What are your services?
                   </button>
                 </h2>
 
@@ -507,7 +548,7 @@ alternatives.</p>
               <div class="accordion-item">
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2" "="">
-                How to create your paypal account?
+                What is your service rating?
               </button>
             </h2>
             <div id=" collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
@@ -523,7 +564,7 @@ alternatives.</p>
             <div class="accordion-item">
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3">
-                  How to link your paypal and bank account?
+                  How do I contact you?
                 </button>
               </h2>
 
@@ -561,7 +602,7 @@ alternatives.</p>
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'homepage/assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'image/1.jpg' %}" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -575,11 +616,10 @@ alternatives.</p>
               </div>
             </div>
           </div><!-- End Team Member -->
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'homepage/assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'image/5.jpg' %}" class="img-fluid team-img" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -593,11 +633,11 @@ alternatives.</p>
               </div>
             </div>
           </div><!-- End Team Member -->
-
+          
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'homepage/assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'image/3.jpg' %}" class="img-fluid team-img" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -611,11 +651,11 @@ alternatives.</p>
               </div>
             </div>
           </div><!-- End Team Member -->
-
+          
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="{% static 'homepage/assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+                <img src="{% static 'image/4.jpg' %}" class="img-fluid team-img" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -629,12 +669,7 @@ alternatives.</p>
               </div>
             </div>
           </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
+          
 
     <!-- Recent Posts Section -->
     <section id="recent-posts" class="recent-posts section">
@@ -653,13 +688,13 @@ alternatives.</p>
             <article>
 
               <div class="post-img">
-                <img src="{% static 'homepage/assets/img/blog/blog-1.jpg' %}" alt="" class="img-fluid">
+                <img src="{% static 'image/blog1.jpeg' %}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Politics</p>
+              <p class="post-category">Event</p>
 
               <h2 class="title">
-                <a href="{% url 'blog_details'  %}">Dolorum optio tempore voluptas dignissimos</a>
+                <a href="{% url 'blog_details'  %}">Eco Revolution: Pioneering the Path to a Sustainable World</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -679,13 +714,13 @@ alternatives.</p>
             <article>
 
               <div class="post-img">
-                <img src="{% static 'homepage/assets/img/blog/blog-2.jpg' %}" alt="" class="img-fluid">
+                <img src="{% static 'image/blog2.jpg' %}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Sports</p>
+              <p class="post-category">Trip</p>
 
               <h2 class="title">
-                <a href="{% url 'blog_details'  %}">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="{% url 'blog_details'  %}">Green Innovations Expo: Discover, Learn, and Act for Our Planet</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -705,13 +740,13 @@ alternatives.</p>
             <article>
 
               <div class="post-img">
-                <img src="{% static 'homepage/assets/img/blog/blog-3.jpg' %}" alt="" class="img-fluid">
+                <img src="{% static 'image/blog3.jpg' %}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Entertainment</p>
+              <p class="post-category">Farming</p>
 
               <h2 class="title">
-                <a href="{% url 'blog_details'  %}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                <a href="{% url 'blog_details'  %}">Eco-Farming Expo: Bridging Innovation and Sustainability in Agriculture</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -751,7 +786,7 @@ alternatives.</p>
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Icon Buidling, Phnom Penh</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -759,7 +794,7 @@ alternatives.</p>
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+1 401 954 7978</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -767,7 +802,7 @@ alternatives.</p>
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>ssoukamn231@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -804,12 +839,8 @@ alternatives.</p>
               </div>
             </form>
           </div><!-- End Contact Form -->
-
         </div>
-
       </div>
-
     </section><!-- /Contact Section -->
-
   </main>
  {% endblock %}
