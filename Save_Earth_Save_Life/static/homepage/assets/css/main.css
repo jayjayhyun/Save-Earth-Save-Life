@@ -1599,19 +1599,51 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+/* Ensure uniform size for all team member containers */
 .team .team-member {
   background-color: var(--surface-color);
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  height: 100%; /* This will be overridden by the flex settings */
+  display: flex;
+  flex-direction: column; /* Ensures the image and info stack vertically */
 }
 
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 400px; /* Set a fixed height for all images */
 }
 
+.team .team-member .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the container without distortion */
+  object-position: center; /* Center the image */
+}
+
+.team .team-member .member-info {
+  padding: 25px 15px;
+  flex-grow: 1; /* Ensures this section takes remaining space evenly */
+  text-align: center; /* Center text alignment */
+}
+
+.team .team-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.team .team-member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+/* Social icon styles */
 .team .team-member .social {
   position: absolute;
   left: 0;
@@ -1645,27 +1677,31 @@ section,
   line-height: 0;
 }
 
-.team .team-member .member-info {
-  padding: 25px 15px;
-}
-
-.team .team-member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.team .team-member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-
 .team .team-member:hover .social {
   opacity: 1;
   bottom: 15px;
 }
+
+/* Ensure all team members have the same height and width */
+.team .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team .col-lg-3 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.team .team-member {
+  width: 100%;
+  max-width: 300px; /* Optional: restrict the max width */
+  height: 100%;
+  min-height: 450px; /* Adjust for uniform height */
+}
+
 
 /*--------------------------------------------------------------
 # Recent Posts Section
